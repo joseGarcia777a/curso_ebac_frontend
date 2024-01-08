@@ -1,0 +1,88 @@
+/* Reset da pagina */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de menu */
+body > header {
+    background: rgb(74, 74, 74);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 6%;
+    color: rgb(217, 215, 215);
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu a {
+    color: rgb(217, 215, 215);
+    text-decoration: none;
+}
+
+#menu a:hover{
+    color: white;
+}
+
+/* copor do site */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+article img {
+    height: 200px;
+}
+
+article a:hover {
+    color: white;
+    background: rgb(128, 128, 129);
+}
+
+article {
+    width: 33%;
+    text-align: justify;
+    padding: 1%;
+}
+
+section {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 1%;
+}
+
+h2 {
+    margin: 2%;
+    padding-top: 2%;
+    padding-left: 1%;
+    font-size: 30px;
+}
+
+#esportes {
+    background: rgb(194, 214, 191);
+}
+
+#economia {
+    background: rgb(202, 202, 181);
+}
+
+#entreterimento {
+    background: rgb(175, 202, 202);
+}
+
+#tecnologia {
+    background: rgb(179, 157, 201);
+}
+
+footer {
+    margin: 20px 0 auto;
+    padding: 20px;
+    background: rgb(209, 207, 207);
+}
