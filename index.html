@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valida A B</title>
+    <link href="./main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="tela">
+        <header>
+            <h1>Validação A-B</h1>
+            <h2>Digite os valores para comparação:</h2>
+        </header>
+        <main>
+            <div class="layer">
+                <form id="formulario">
+                    <label for="numA">Numero A</label>
+                    <input id="numA" type="text" required="true" placeholder="Somente numeros"/>
+                    <p id="error1" class="error"></p>
+                    <label for="numB">Numero B</label>
+                    <input id="numB" type="text" required="true" placeholder="Somente numeros"/>
+                    <p id="error2" class="error"></p>
+                    <button id="compara" type="submit" >Comparar</button>
+                </form>
+            </div>
+        </main>
+        <p id="resultado" >Resultado</p>
+    </div>
+    <script src="./main2.js"></script>
+</body>
+</html>

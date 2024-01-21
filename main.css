@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, p, label{
+    color: rgba(6, 62, 40, 0.649);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.tela{
+    width: 600px;
+    margin: 60px 0;
+    padding: 60px;
+    background-color: rgba(66, 160, 118, 0.343);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+form{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.layer{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(240, 248, 255, 0.677);
+    padding: 40px 0 40px  0;
+    width: 400px;
+    border-radius: 3px;
+}
+
+input{
+    width: 200px;
+    height: 25px;
+    border: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+button{
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(58, 142, 114, 0.78);
+    color: rgba(240, 248, 255, 0.793);
+    margin-top: 40px;
+}
+
+button:hover{
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(58, 142, 114, 0.511);
+    color: rgba(240, 248, 255, 0.793);
+    margin-top: 40px;
+}
+
+#resultado{
+    margin: 70px 10px 40px 40px;
+    font-size: 125%;
+}
+
+.error{
+    display: none;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    background-color: rgba(242, 67, 67, 0.77);
+    color: rgb(245, 239, 239);
+    font-size: 14px;
+    text-align: justify;
+    border-radius: 3px;
+}
