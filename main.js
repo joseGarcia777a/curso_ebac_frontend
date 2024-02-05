@@ -8,7 +8,11 @@ $(document).ready(function(){
         $('ul').append(`<li class="lista">${tarefa}</li>`);
 
         $('.lista').click(function(){
-            $('li').css('text-decoration', 'line-through');
+            $(this).css('text-decoration', 'line-through');
+        });
+
+        $('#tarefa').each(function(){
+            $(this).val('');
         });
 
     });
