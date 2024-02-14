@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet"/>
+    <title>Cadastro Pessoal</title>
+</head>
+<body>
+    <header>
+        <div class="contander">
+            <div>
+                <h1>Print Form</h1>
+                <h2>Cadastro Pessoal</h2>
+            </div>
+        </div>
+    </header>
+    <section class="contander">
+        <div class="cadastro">
+            <img src="./imagens/tela.png" alt="tela"/>
+            <div class="tela">
+                <form>
+                    <h3> Cadastro </h3>
+                    <label for="nome" id="nome-label">Nome Completo</label>
+                    <input id="nome" name="nome" type="text" placeholder="Nome"/>
+                    <label for="cpf" id="cpf-label">CPF</label>
+                    <input id="cpf" name="cpf" type="text" placeholder="751303271-87"/>
+                    <label for="email">E-Mail</label>
+                    <input id="email" name="email" type="text" placeholder="E-Mail"/>
+                    <div>
+                        <label for="tel">Telefone</label>
+                        <input id="tel" name="tel" type="tel" placeholder="(00) 00000-0000"/>
+                        <label for="cep">CEP</label>
+                        <input id="cep" name="cep" type="text" placeholder="00000-000"/>
+                        <label for="endereco">Endereço</label>
+                        <input id="endereco" name="endereco" type="text"/>
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
