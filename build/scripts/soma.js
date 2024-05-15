@@ -1,0 +1,1 @@
+const numeroUm=20,numeroDois=45,numeroTres=30,total=numeroDois+numeroUm+numeroTres;console.log(total);
