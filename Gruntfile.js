@@ -47,7 +47,7 @@ module.exports = function(grunt) {
                             replacement: './styles/main.min.css'
                         },
                         {
-                            match: 'ENDERECO_DO_js',
+                            match: 'ENDERECO_DO_JS',
                             replacement: './scripts/main.min.js'
                         }
                     ]
@@ -101,5 +101,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('build', ['less:production', 'htmlmin', 'replace:dist', 'clean', 'uglify'])
+    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'clean', 'uglify'])
 };
