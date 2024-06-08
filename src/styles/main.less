@@ -1,94 +1,35 @@
-@import "mixin.less";
-@import "mapas.less";
-
-@breakpointMobile: ~"(max-width: 767px)";
-@breakpointTablet: ~"(min-width: 768px) and (max-width:1023px)";
-
-
-* {
-    // uso de mixin
-    .display();
-}
-
 body {
-    // uso de mapas
-    background-color: #setBackgroundColor[um];
+    margin: 0;
+    background-color: rgb(215, 215, 215);
+    color: rgb(35, 35, 35);
+    height: 100vh;
+    position: relative;
 }
 
-header {
-    background-color: #setBackgroundColor[dois];
-    position: sticky;
-    top: 0;
-    left: 0;
-
-    & .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 0;
-
-        & .menu {
-            display: flex;
-
-            & li {
-                font-weight: bold;
-                margin-left: 24px;
-
-                & a {
-                    color: #setColorText[um];
-                }
-            }
-        }
-    }
+.ball {
+    background-color: rgb(13, 79, 165);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgb(59, 114, 224);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.products {
-    // uso de mixin
-    .setMarginDisplay(40px, grid);
-    .setGrid(repeat(3, 32.66%), 1%);
+.info {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 15px;
+    left: 60px;
+}
+
+.floor {
+    background-color: rgb(66, 66, 66);
     width: 100%;
-    row-gap: 4%;
-
-    & img {
-        width: 100%;
-        border-radius: 16px;
-    }
-
-    & .product-button {
-        background-color: #setBackgroundColor[tres];
-        color: #setColorText[um];
-        text-align: center;
-        padding: 8px 0;
-        border-radius: 8px;
-        .setMarginDisplay(8px, block);
-
-        &:hover {
-            background-color: #setBackgroundColor[quatro];
-        }
-    }
+    height: 250px;
+    position: absolute;
+    top: 500px;
+    box-shadow: 0 0 15px 5px rgb(125, 125, 125);
 }
-
-@media @breakpointMobile {
-    
-    .container {
-        max-width: 80%;
-        .products {
-            display: block;
-    
-            & .product-item {
-                margin-bottom: 32px;
-            }
-        }
-    }
-}
-
-@media @breakpointTablet {
-    .container {
-        max-width: 80%;
-
-        .products {
-            .setGrid(repeat(2, 48.5%), 3%);
-        }
-    }
-}
-
