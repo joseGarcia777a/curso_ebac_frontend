@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function(e) {
     const endpoint = 'https://api.github.com/users/joseGarcia777a';
 
     fetch(endpoint).then(function(resposta) {
+        if(!resposta.ok) {
+            throw new Error('não foi possivel obter os dados da API');
+        }
         return resposta.json();
     }).then(function(json) {
         name.innerHTML = json.name;
@@ -19,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
         seguindo.innerHTML = json.following;
         avatar.src = json.avatar_url;
     }).catch(function(erro) {
-        alert("Ocorreu um erro, tente novamente mais tarde.");
+        alert("Ocorreu um erro, tente novamente mais tarde." + erro);
     }).finally(function() {
         console.log("fim");
     });
